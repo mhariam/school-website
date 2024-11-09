@@ -1,0 +1,380 @@
+body {
+    font-family: 'poppins', sans-serif;
+}
+header{
+    background: gainsboro;
+    height: 150px;
+}
+
+.first_div {
+    padding: 5px;
+    background-color: rgb(238, 233, 233);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.first_div li a{
+    color: black;
+}
+ul {
+    padding: 10px;
+    list-style: none;  
+    text-align: right;         
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.second_div {
+    background-color: whitesmoke;
+    height: 100px;
+}
+form {
+    padding: 5px;
+    text-align: right;
+}
+.search {
+    display: inline-block;
+    padding: 5px;
+    border: solid 1px rgb(82, 80, 80);
+    background-color: grey;
+}
+.search input {
+    border: none;
+}
+.flex-container {
+    display: flex;
+    float: left;
+    color: rgb(61, 61, 122);
+}
+.h a {
+   color:  black;
+}
+
+.h li a:hover {
+    color: blue;
+}
+
+section {
+    padding: 20px 15%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home {
+    min-height: 90vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(Image/Img_1_1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+/* home_page_content */
+.home_page_content {
+   
+    position: absolute;
+    bottom: 80px;
+    left:50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.home_page_content div:first-child{
+    margin: 0px 20px 10px 0px;
+}
+
+.home_page_content h1 {
+   color: white;
+   font-size: 40px;
+   font-family: sans-serif;
+}
+
+.cercle {
+    display: inline-block;
+    padding: 5px;
+    border: solid 1px blue;
+    border-radius: 100%; 
+}
+
+p {
+    color: whitesmoke;
+}
+
+.sub_element {
+  
+    position: absolute;
+    width: 80%;
+    border-left: solid 2px yellow;
+    bottom: -40px;
+   
+}
+
+.element {
+    background: blue;
+    display: inline-block;
+    float: right;
+    color: white;  
+    padding: 20px; 
+}
+.element ul li{
+    padding: 20px;
+    border-right: solid 1px rgb(224, 216, 216);
+    display: inline-block;
+    color: white;
+}
+
+.element ul li:last-child {
+    padding: 20px;
+    display: inline-block;
+    border: none;
+}
+.element ul li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+.g {
+    width: 25%;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(62, 17, 226);
+    background: none;
+}
+
+.section_one {
+    padding: 100px 0px;
+    width: 100%;
+    background:linear-gradient(rgba(247, 242, 242, 0.466), rgba(247, 242, 242, 0.904)), url(Image/esquisse-darchitecte.jpg) no-repeat;  
+    background-position-x: right;  
+    background-position-y:bottom;
+}
+
+.home_one {
+
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.home_one_element {
+    position: relative;
+    padding: 10px; 
+    margin: 65px 10px;
+}
+
+.home_one_element:hover .overlay {
+    display: block;
+
+} 
+
+.home_one_element:hover h4 {
+    display: none;
+
+} 
+.home_one_element .overlay{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    height: 184px;
+    width: 275px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    text-align: center;
+    padding: 70px;
+    left: 10px;
+    top: 10px;
+}
+
+
+.text {
+    padding: 0px;
+    width: 100%;
+    height: 500px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.t {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+}
+p {
+    color: #3f21c5;
+}
+.ci { 
+    padding: 20px;
+    width: 100%;
+    color: #3f21c5;
+    text-align: center;
+    font-size: 30px;
+}
+.sub {
+    margin: 20px 0px;
+    border-left: solid 3px rgb(255, 255, 0);
+    position: absolute;
+    top: 1900px;
+    left: 500px;
+    height: 120px;
+}
+
+.blocks {
+    padding: 20px 8%;
+    width: 100%;
+    height: 500px;
+    color: blue;
+}
+
+.block {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.icone {
+    margin: 80px 0px;
+    padding: 20px 20px;
+}
+.div_ones {
+    margin: 60px 0px;
+    padding: 20px;
+    width: 20%;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(rgba(9, 5, 245, 0.973), rgba(50, 6, 245, 0.863)), url(Image/logo_School.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 259px;
+}
+.div_two {
+    margin: 60px 20px;
+    padding: 15px;
+    width: 35%;
+    height: 259px;
+    font-size: 27px;
+    background-color: whitesmoke;
+}
+.blocks .div_two:hover {
+   background-color: blue;
+}
+.blocks .div_two:hover .over {
+   color: white;
+}
+
+.blocks .div_two:hover font {
+    color: white;
+}
+
+.div_three {
+    margin: 60px 20px;
+    padding: 20px;
+    width: 25%;
+    height: 259px;
+    font-size: 30px;
+    background-color: whitesmoke;
+}
+.blocks .div_three:hover {
+    background-color: blue;
+ }
+ .blocks .div_three:hover .over {
+    color: white;
+ }
+ 
+ .blocks .div_three:hover font {
+     color: white;
+ }
+.div_four {
+    margin: 60px 20px;
+    padding: 20px;
+    width: 29%;
+    height: 259px;
+    font-size: 30px;
+    background-color: whitesmoke;
+}
+.blocks .div_four:hover {
+    background-color: blue;
+ }
+ .blocks .div_four:hover .over {
+    color: white;
+ }
+ 
+ .blocks .div_four:hover font {
+     color: white;
+ }
+
+.div_one {
+    width: 100%;
+    height: 120px;
+    padding: 35px;
+    background-color: #361da8;
+    color: white;
+    text-align: center;
+}
+.div_young {
+    width: 155px;
+    height: 45px;
+    padding: 14px;
+    position: absolute;
+    top: 2530px;
+    left: 900px;
+    background: #2067b8;
+}
+footer {
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    height: 380px;
+    background: linear-gradient(rgba(47, 33, 126, 0.938), rgba(44, 29, 110, 0.849)), url(Image/Img_13.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 100px;
+}
+.der {
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.flexone {
+    padding: 0;
+    width: 50%;
+    height: 100%;
+}
+.flextwo {
+    padding: 0;
+    margin: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.flex-container1 {
+    margin: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    float: left;
+}
+.flex_one{
+    margin: 20px;
+    width: 50%;
+    mix-blend-mode: multiply;
+}
+.flex_two{
+    margin: 30px;
+    width: 50%;
+}
+
+i {
+    color: orange;
+}
