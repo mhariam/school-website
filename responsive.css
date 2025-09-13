@@ -1,0 +1,22 @@
+@media screen and (max-width:390px) {
+
+    #titre {
+        color: yellow;
+    }
+    section {
+        padding: 20px 0px;
+        width: 100%;
+    }
+}
+
+@media (min-width:390px) and (max-width:780px) {
+
+    #titre {
+        color: yellow;
+    }
+
+    section {
+        padding: 20px 0px;
+        width  : 100%;
+    }
+}

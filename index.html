@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Website</title>
     <link rel="stylesheet" href="Style.css">
+
+    <link rel="stylesheet" href="responsive.css">
+
     <script src="https://kit.fontawesome.com/61523b4b4d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
 </head>
@@ -31,7 +34,7 @@
                 <div>
                     <img src="c:\Users\hp\Desktop\TABLEAU\logo_School.jpg" width="90px" height="90px">
                 </div>
-                <div><font size="+3">SACRED HEART<br>SCHOOL </font></div>
+                <div id="titre"><font size="+3">SACRED HEART<br>SCHOOL </font></div>
             </div>
             <form>
                 <font color="blue"> <img src="Image/Phone1.png" width="25px" height="23px"> (425) 451-1773</font>
@@ -54,9 +57,9 @@
   </header>
 
     <!-- Home --> 
+
     <section class="home">
-        <div class="home_page_content">
-            <div>
+            <div class="slide_arrows">
                 <div class="cercle" id="suivant">
                     <img src="Image/Arrow_right.png" width="40px" height="30px">
                     <i class="bi-arrow-clockwise::before"></i>
@@ -66,6 +69,7 @@
                     <i class="bi-arrow-counterclockwise::before"></i>
                 </div>
             </div>
+        <div class="home_page_content active">
             <div>
                 <h1>
                     Faith, Community <br>
@@ -79,6 +83,24 @@
                 </p> 
             </div>
         </div>
+    
+        <div class="home_page_content">
+            <div>
+                <h1>
+                    Community <br>
+                    and Excellence 
+                </h1> <br>
+                <p>
+                    <font color="white">
+                        Education in an environment of faith and <br>
+                        virtue for pre-K through 8th grade.
+                    </font>
+                </p> 
+            </div>
+        </div>
+      
+
+
         <div class="sub_element">
             <div class="element">
                 <ul>
@@ -216,7 +238,10 @@
         <HR ALIGN=″CENTER″ WIDTH=″50%″ padding="20px" color="blue"/> <br>
 
     </div>
-
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.978875012585!2d-4.0211148251303666!3d5.420179835000781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc195df9927806f%3A0xa90ae4e6728358b4!2sMuCAT%20(Mus%C3%A9e%20des%20Cultures%20Contemporaines%20Adama%20TOUNGARA)!5e0!3m2!1sen!2sci!4v1757762612625!5m2!1sen!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+ 
     <footer>
         <div class="div_one">
             <font size="+3">Schedule a visit at Sacred Heart</font>
@@ -266,5 +291,37 @@
             </div>
        </section>
     </footer>
+    <script>
+        const slides = document.querySelectorAll('.home_page_content');
+            const btnNext = document.getElementById('suivant');
+            const btnPrev = document.getElementById('precedent');
+            let currentIndex = 0;
+
+            function showSlide(index,animation) {
+
+                slides.forEach((slide, i) => {
+                        // slide.style.animation = animation
+                        // slide.classList.toggle('active');
+                        slide.classList.toggle('active', i === index);
+                    
+                });
+            }
+
+            btnNext.addEventListener('click', () => {
+                console.log('NEXT'+ currentIndex);
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex,"fadeIn");
+            });
+            
+            btnPrev.addEventListener('click', () => {
+                console.log('PREV'+currentIndex);
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex, "fadeOut");
+            });
+
+            // // Initial display
+            // showSlide(currentIndex);
+
+    </script>
 </body>
 </html>
